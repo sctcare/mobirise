@@ -45,20 +45,21 @@
     "uniqCompNum": 77,
     "versionPublish": "4.6.7",
     "screenshot": "screenshot.png",
-    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\nRewriteEngine On\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteRule ^([^.]+)$ $1.html [NC,L]",
     "robotsSwitcher": "on",
-    "siteUrl": "",
+    "siteUrl": "https://www.specialistcareteam.co.uk",
     "sitemapSwitcherAuto": "on",
     "cookiesAlert": "",
-    "google-analytics": ""
+    "google-analytics": "<!-- Google Tag Manager (noscript) -->\r\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-NRCMMXS\"\r\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n<!-- End Google Tag Manager (noscript) -->",
+    "sitemapSwitcher": "on"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
-        "header_custom": "",
+        "title": "Specialist Care Team – Mental Health and Learning Disability Services",
+        "meta_descr": "Specialist Care Team delivers person-centred adult care in the mental health and learning disability categories across Lancaster and Morecambe",
+        "header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-NRCMMXS');</script>\n<!-- End Google Tag Manager -->",
         "footer_custom": "",
         "html_before": ""
       },
@@ -612,8 +613,10 @@
     },
     "about.html": {
       "settings": {
-        "title": "About us",
-        "order": 1
+        "title": "Specialist Care Team – Why choose us?",
+        "order": 1,
+        "header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-NRCMMXS');</script>\n<!-- End Google Tag Manager -->",
+        "meta_descr": "Specialist Care Team delivers person-centred adult care in the mental health and learning disability categories across Lancaster and Morecambe"
       },
       "components": [
         {
@@ -1289,8 +1292,11 @@
     },
     "contact.html": {
       "settings": {
-        "title": "Contact us",
-        "order": 3
+        "title": "Specialist Care Team - Contact us",
+        "order": 3,
+        "footer_custom": "",
+        "header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-NRCMMXS');</script>\n<!-- End Google Tag Manager -->",
+        "meta_descr": "Specialist Care Team delivers person-centred adult care in the mental health and learning disability categories across Lancaster and Morecambe"
       },
       "components": [
         {
@@ -1930,8 +1936,10 @@
     },
     "jobs.html": {
       "settings": {
-        "title": "Jobs",
-        "order": 4
+        "title": "Specialist Care Team - We're hiring!",
+        "order": 4,
+        "header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-NRCMMXS');</script>\n<!-- End Google Tag Manager -->",
+        "meta_descr": "Specialist Care Team delivers person-centred adult care in the mental health and learning disability categories across Lancaster and Morecambe. Find out more about our latest job vacancies."
       },
       "components": [
         {
@@ -2626,8 +2634,10 @@
     },
     "ourservice.html": {
       "settings": {
-        "title": "Our Service",
-        "order": 2
+        "title": "Specialist Care Team - Our Service",
+        "order": 2,
+        "header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-NRCMMXS');</script>\n<!-- End Google Tag Manager -->",
+        "meta_descr": "Specialist Care Team delivers person-centred adult care in the mental health and learning disability categories across Lancaster and Morecambe"
       },
       "components": [
         {
