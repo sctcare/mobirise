@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Specialist Care Team",
-    "currentPage": "jobs.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "businessm4",
       "title": "Business M4",
@@ -11,7 +11,7 @@
         "successColor": "#44b6e3",
         "infoColor": "#f5a049",
         "warningColor": "#a8315d",
-        "dangerColor": "#b0d6e6",
+        "dangerColor": "#0e8f61",
         "mainFont": "Montserrat",
         "display1Font": "Fira Sans",
         "display1Size": 3,
@@ -42,10 +42,10 @@
     "favicon": "",
     "noImageResize": "",
     "versionFirst": "4.6.7",
-    "uniqCompNum": 77,
+    "uniqCompNum": 81,
     "versionPublish": "4.6.7",
     "screenshot": "screenshot.png",
-    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\nRewriteEngine On\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteRule ^([^.]+)$ $1.html [NC,L]",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin",
     "robotsSwitcher": "on",
     "siteUrl": "https://www.specialistcareteam.co.uk",
     "sitemapSwitcherAuto": "on",
@@ -494,6 +494,35 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value"
+            },
+            ".mbr-overlay": {
+              "background": "@overlayColor"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#cccccc"
+            },
+            ".mbr-section-subtitle,mbr-section-btn": {
+              "color": "#232323"
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section class=\"info2\" group=\"Call To Action\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n<!--         <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked> -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n\n    <div class=\"container align-left\">\n        <div class=\"row justify-content-center\">\n            <div class=\"media-container-column mbr-white col-md-10 col-lg-8\">\n                <h1 class=\"mbr-section-title align-center pb-3 mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Care Quality Commission registration</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle,mbr-section-btn\">As a social care provider, we are registered and regulated by the Care Quality Commission. Our latest ratings are published below for the services we deliver. <i>Click to read our reports on the CQC website:</i></h3>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center pt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-danger\" href=\"http://www.cqc.org.uk/location/1-811159391\" target=\"_blank\">Domicialiary Care – Good</a>\n                    <a class=\"btn btn-md btn-danger\" href=\"http://www.cqc.org.uk/location/1-325330276\">Clover House – Good</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qOIBrUndoK",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "info2-28"
         },
         {
           "_styles": {
